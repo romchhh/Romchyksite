@@ -23,6 +23,36 @@ canvas {
     margin: 20px;
 }
 
+/* Для екранів ширше 768px */
+@media only screen and (min-width: 768px) {
+    .photo-container {
+        justify-content: space-between;
+    }
+    .photo {
+        width: 30%;
+    }
+}
+
+/* Для екранів ширше 576px, але менше або дорівнює 768px */
+@media only screen and (min-width: 576px) and (max-width: 767px) {
+    .photo-container {
+        justify-content: center;
+    }
+    .photo {
+        width: 45%;
+    }
+}
+
+/* Для екранів менше або дорівнює 576px */
+@media only screen and (max-width: 575px) {
+    .photo-container {
+        justify-content: center;
+    }
+    .photo {
+        width: 90%;
+    }
+}
+
 .background-photo {
     position: fixed;
     /* або може бути absolute, в залежності від ваших потреб */
